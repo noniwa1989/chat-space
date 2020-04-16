@@ -1,0 +1,146 @@
+.main-chat{
+  width: calc(100vw - 300px);
+  float: right;
+
+  &__group-info{
+    background-color: #ffffff;
+    height: 100px;
+    border-bottom: solid #eeeeee;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+   
+      .info-header
+        .info-top{
+          font-size: 20px;
+          color:#333333;
+          padding-top: 35px;
+        }
+        .info-name{
+          font-size: 12px;
+          color: #999999;
+          padding-top: 15px;
+        }
+
+        .edit-box{
+          width: 72px;
+          height: 40px;
+          border: solid 1px #38aef0;
+          margin-top: 28px;
+          line-height: 40px;
+        
+            .edit-btn{
+              a{
+                color: #38aef0;
+                font-size: 16px;
+                padding: 0px 20px;
+                text-decoration: none;
+              }
+            }
+        }
+   
+  }
+
+  &__message-list{
+    background-color: #fafafa;
+    height: calc(100vh - 100px - 90px );
+    padding: 35px 40px 0px 40px;
+
+    .message-who{
+      display: flex;
+      margin-bottom: 12px;
+      .message-name{
+        font-size: 16px;
+        color: #333333
+      }
+      .message-day{        
+        font-size: 12px;
+        color: #999999;
+        margin-left: 10px;
+      }
+    }
+      .coments{
+        font-size: 14px;
+        color: #434a54;
+        margin-bottom: 46px;
+      }
+
+
+    .message-who-2{
+      display: flex;
+      margin-bottom: 12px;
+      .message-name{
+        font-size: 16px;
+        color: #333333
+      }
+      .message-day{        
+        font-size: 12px;
+        color: #999999;
+        margin-left: 10px;
+      }
+    }
+      .coments{
+        font-size: 14px;
+        color: #434a54;
+        margin-bottom: 46px;
+      }
+  }
+
+
+
+  &__message-form{
+    background-color: #d2d2d2;
+    height: 90px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      .form-box{
+        height: 50px;
+        width: 100%;
+        background-color: #fafafa;
+        
+          .message-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 10px;
+            .message-form{
+              color: #434a45;
+              border-style: none;
+              width: 100%;
+              height: 50px;
+            }
+            .image-icon{
+              .label{
+                color: black;
+                cursor: pointer;
+              }
+              .label-form{
+                display: none;
+              }
+            }
+          }
+      }
+      .send-btn{
+        height: 50px;
+        width: 100px;
+        background-color: #38aef0;
+        margin-left: 15px;
+        // margin: 0px 40px 0px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fafafa;
+        cursor: pointer;
+      }
+   
+    
+  }
+
+
+
+
+
+}
+
