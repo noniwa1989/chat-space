@@ -1,18 +1,11 @@
 .side-bar{
   width: 300px;
-  // height: 100vh;
-  // // background-color: #2f3e51;
   float: left;
 
   &__header{
     display: flex;
-    // 親要素とし、横に並べる
     align-items: center;
-    // 上下を中心に
-    // justify-content: center;
-    // 左右で中心に
     justify-content:space-between;
-    // 両端から均等に配置
     
     background-color: #253141;
     height: 100px;
@@ -23,16 +16,11 @@
       color: #ffffff;
       font-size: 16px;
       margin-left: 20px;
-      
     }
 
     .icon-box{
-      // text-align: center;
-      
       display:flex;
       justify-content:flex-end;
-      // flex-direction:row-reverse;
-      // align-content: flex-end;
       width: 60px;
       height: 20px;
       font-size: 16px;
@@ -40,33 +28,23 @@
       
       .icon{
         a{ color: #ffffff;
-      // height: 20px;
-      // width: 260px;
        padding-right: 5px;
         }
       }
       .link-image{
         a{
           color:white;
-          
         }
-      
       }
-
-    
     }
   }
 
   
 
   &__group-list{
-    // width: 300px;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-    // height: calc(100vh - 300px);
-    // float: left;
     align-items: stretch;
-    // margin: 0px, 20px;
     padding: 20px 20px 0px 20px;
     color:#ffffff;
     
@@ -82,9 +60,6 @@
         margin-bottom: 40px;
       }
     }
-
   }
   
-
-
 }
