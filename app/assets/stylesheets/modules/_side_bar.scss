@@ -1,0 +1,65 @@
+.side-bar{
+  width: 300px;
+  float: left;
+
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+    background-color: #253141;
+    height: 100px;
+    width: 300px;
+    flex-direction:row;
+
+    .user-name{
+      color: #ffffff;
+      font-size: 16px;
+      margin-left: 20px;
+    }
+
+    .icon-box{
+      display:flex;
+      justify-content:flex-end;
+      width: 60px;
+      height: 20px;
+      font-size: 16px;
+      margin-right: 20px;
+      
+      .icon{
+        a{ color: #ffffff;
+       padding-right: 5px;
+        }
+      }
+      .link-image{
+        a{
+          color:white;
+        }
+      }
+    }
+  }
+
+  
+
+  &__group-list{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    align-items: stretch;
+    padding: 20px 20px 0px 20px;
+    color:#ffffff;
+    
+    .group{
+      
+      .group-name{
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+    
+      .last-message{
+        font-size: 11px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  
+}
