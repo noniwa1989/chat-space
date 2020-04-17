@@ -5,7 +5,7 @@
 
     %ul.icon-box
       %li.icon
-        = link_to "#" do
+        = link_to new_group_path do
           = icon('far','edit')
           -# = link_to do
           -# = icon('fas', 'pen-square', class: 'icon')
@@ -16,14 +16,10 @@
       
 
   .side-bar__group-list
-    .group
-      .group-name
-        techcamp
-      .last-message
-        まだメッセージがありません
-
-      .group-name
-        techcamp
-      .last-message
-        まだメッセージがありません
-
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group-name
+            = group.name
+          .last-message
+            まだメッセージがありません
