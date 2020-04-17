@@ -1,16 +1,18 @@
 .side-bar
   .side-bar__header
-    .user-name
-      masa
+    %h3.user-name
+      = current_user.name
 
-    .icon-box
-      .icon
+    %ul.icon-box
+      %li.icon
         = link_to "#" do
           = icon('far','edit')
+          -# = link_to do
+          -# = icon('fas', 'pen-square', class: 'icon')
      
-      .link-image
-        = link_to "#" do
-          = icon('fas','cog')
+      %li.link-image
+        = link_to edit_user_path(current_user) do
+          = icon('fas','cog', class: 'icon')
       
 
   .side-bar__group-list
