@@ -46,18 +46,18 @@
     background-color: #2f3e51;
     align-items: stretch;
     padding: 20px 20px 0px 20px;
-    color:#ffffff;
     
     .group{
+      a{color:#ffffff;
+        .group-name{
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
       
-      .group-name{
-        font-size: 15px;
-        margin-bottom: 5px;
-      }
-    
-      .last-message{
-        font-size: 11px;
-        margin-bottom: 40px;
+        .last-message{
+          font-size: 11px;
+          margin-bottom: 40px;
+        }
       }
     }
   }
