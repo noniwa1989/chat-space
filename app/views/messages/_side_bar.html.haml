@@ -7,8 +7,6 @@
       %li.icon
         = link_to new_group_path do
           = icon('far','edit')
-          -# = link_to do
-          -# = icon('fas', 'pen-square', class: 'icon')
      
       %li.link-image
         = link_to edit_user_path(current_user) do
@@ -18,8 +16,8 @@
   .side-bar__group-list
     - current_user.groups.each do |group|
       .group
-        = link_to '#' do
-          .group-name
+        = link_to group_messages_path(group) do
+          .group__name
             = group.name
-          .last-message
-            まだメッセージがありません
+          .group__message
+            = group.show_last_message
