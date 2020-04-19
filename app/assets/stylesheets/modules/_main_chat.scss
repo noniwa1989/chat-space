@@ -20,6 +20,7 @@
           font-size: 12px;
           color: #999999;
           padding-top: 15px;
+          display: flex;
         }
 
         .edit-box{
@@ -38,22 +39,24 @@
               }
             }
         }
-   
   }
 
   &__message-list{
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px );
     padding: 35px 40px 0px 40px;
+    overflow: scroll;
 
-    .message-who{
+    .upper-message{
       display: flex;
+      justify-content: left;
       margin-bottom: 12px;
-      .message-name{
+      .upper-message__user-name{
+        font-weight: bold;
         font-size: 16px;
         color: #333333
       }
-      .message-day{        
+      .upper-message__date{        
         font-size: 12px;
         color: #999999;
         margin-left: 10px;
@@ -66,81 +69,53 @@
       }
 
 
-    .message-who-2{
-      display: flex;
-      margin-bottom: 12px;
-      .message-name{
-        font-size: 16px;
-        color: #333333
-      }
-      .message-day{        
-        font-size: 12px;
-        color: #999999;
-        margin-left: 10px;
-      }
-    }
-      .coments{
-        font-size: 14px;
-        color: #434a54;
-        margin-bottom: 46px;
-      }
   }
 
 
 
-  &__message-form{
+  .form {
     background-color: #d2d2d2;
     height: 90px;
     padding: 0 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-      .form-box{
-        height: 50px;
-        width: 100%;
-        background-color: #fafafa;
-        
-          .message-box{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0px 10px;
-            .message-form{
+    // justify-content: space-between;
+      .top{
+        display: flex;
+        position: relative;
+        .form__mask{
+          display: flex;
+          position: absolute;
+          right: 130px;
+          font-size: 1.3rem;
+          bottom: 10px;
+        }
+        .form__message{
+              height: 50px;
+              width: 950px;
+              padding: 0 40px 0 10px;
               color: #434a45;
               border-style: none;
-              width: 100%;
-              height: 50px;
+              // .form__mask__image{
+              // }    
+        }
+            .hidden{
+              display: none;
+              cursor: pointer;
             }
-            .image-icon{
-              .label{
-                color: black;
-                cursor: pointer;
-              }
-              .label-form{
-                display: none;
-              }
-            }
-          }
+
+        .form__submit{
+          height: 50px;
+          width: 100px;
+          background-color: #38aef0;
+          margin-left: 15px;
+          // margin: 0px 40px 0px 15px;
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          color: #fafafa;
+          cursor: pointer;
+        }
       }
-      .send-btn{
-        height: 50px;
-        width: 100px;
-        background-color: #38aef0;
-        margin-left: 15px;
-        // margin: 0px 40px 0px 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fafafa;
-        cursor: pointer;
-      }
-   
-    
-  }
-
-
-
-
-
+    }
 }
-
