@@ -46,9 +46,11 @@
     background-color: #2f3e51;
     align-items: stretch;
     padding: 20px 20px 0px 20px;
+    overflow: scroll;
     
     .group{
       a{color:#ffffff;
+        text-decoration: none;
         .group__name{
           font-size: 15px;
           margin-bottom: 5px;

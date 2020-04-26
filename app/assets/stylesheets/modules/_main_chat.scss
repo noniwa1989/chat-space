@@ -46,7 +46,9 @@
     height: calc(100vh - 100px - 90px );
     padding: 35px 40px 0px 40px;
     overflow: scroll;
-
+    .message{
+      padding-bottom: 46px;
+    }
     .upper-message{
       display: flex;
       justify-content: left;
@@ -62,11 +64,17 @@
         margin-left: 10px;
       }
     }
-      .coments{
-        font-size: 14px;
-        color: #434a54;
-        margin-bottom: 46px;
+
+    .lower-message{
+    &__content{
+      margin-bottom: 10px;
+    }
       }
+      // .coments{
+      //   font-size: 14px;
+      //   color: #434a54;
+      //   // margin-bottom: 46px;
+      // }
 
 
   }
@@ -80,6 +88,9 @@
     display: flex;
     align-items: center;
     // justify-content: space-between;
+      .new_message{
+        width: 100%;
+      }
       .top{
         display: flex;
         position: relative;
@@ -89,6 +100,9 @@
           right: 130px;
           font-size: 1.3rem;
           bottom: 10px;
+        }
+        .form__mask__image{
+          cursor: pointer;
         }
         .form__message{
               height: 50px;
@@ -102,11 +116,13 @@
             .hidden{
               display: none;
               cursor: pointer;
+              padding-right: 40px;
             }
 
         .form__submit{
           height: 50px;
-          width: 100px;
+          // width: 100px;
+          padding: 0px 25px;
           background-color: #38aef0;
           margin-left: 15px;
           // margin: 0px 40px 0px 15px;
